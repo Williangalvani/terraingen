@@ -7,7 +7,7 @@
 html,
 body {
     font-family: 'Muli', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -33,6 +33,8 @@ p {
 }
 
 #menu {
+    max-height: 75%;
+    overflow-x: hidden;
     color: rgb(250, 243, 233);
     position: absolute;
     z-index: 2000;
@@ -40,7 +42,7 @@ p {
     min-width: 230px;
     max-width: 320px;
     margin: 5px;
-    margin-top: 10vh;
+    margin-top: 11vh;
     border: 2px solid rgba(166, 183, 214, 0.61);
     border-radius: 10px;
     padding: 15px;
@@ -242,4 +244,30 @@ footer b, .design {
     font-size: 12px;
     color: rgba(250, 243, 233, 0.24);
     margin: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    z-index: 5000;
+    border-radius: 50px;
+    left: 5px;
+    top: 11vh;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1300px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
 }
