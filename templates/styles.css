@@ -1,0 +1,273 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+/* GLOBAL */
+
+html,
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+/* WRAPPER */
+
+#wrapper {
+    min-height: 100%;
+}
+
+#mapid {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#menu {
+    max-height: 75%;
+    overflow-x: hidden;
+    color: rgb(250, 243, 233);
+    position: absolute;
+    z-index: 2000;
+    width: 22vw;
+    min-width: 230px;
+    max-width: 320px;
+    margin: 5px;
+    margin-top: 11vh;
+    border: 2px solid rgba(166, 183, 214, 0.61);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23030613' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23060b27' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2308113a' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230b164e' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230e1c61' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    box-shadow: 10px 7px 5px -9px rgba(13, 29, 46, 0.418);
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* FORM */
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 8px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 22.5px;
+}
+
+.label-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+input {
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input#lat,
+input#long {
+    width: 150px;
+}
+
+input[type="submit"i] {
+    color: antiquewhite;
+    font-family: 'Muli', sans-serif;
+    font-size: 17px;
+    background: #0E1C61;
+    background: linear-gradient(0deg, #0e1b5e 40%, #122581 70%);
+    padding: 5px 45px;
+    border: 1.5px solid antiquewhite;
+    border-radius: 30px;
+}
+
+input[type="submit"i]:hover {
+    background-color: rgba(166, 195, 214, 0.493);
+}
+
+input[type="submit"i]:active {
+    outline: none;
+}
+
+input[type=range] {
+    height: 28px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #0E1C61;
+    background: linear-gradient(0deg, #324dd4 40%, #2136a0 70%);
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 0px #627899;
+    border: 1px solid #6477a1;
+    height: 20px;
+    width: 18px;
+    border-radius: 10px;
+    background: #f1f6fa;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #7fa8c9;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #7fa5c9;
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 0px #628599;
+    border: 1px solid #6489a1;
+    height: 20px;
+    width: 18px;
+    border-radius: 10px;
+    background: #b4d1ed;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 13px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #7fa8c9;
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #7fabc9;
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 0px #627a99;
+    border: 1px solid #648ea1;
+    height: 20px;
+    width: 18px;
+    border-radius: 10px;
+    background: #b4d3ed;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #7f96c9;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #7f9fc9;
+}
+
+#radius {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23030613' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23060b27' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2308113a' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230b164e' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230e1c61' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(250, 243, 233, 0.548);
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    width: 100%;
+    height: 22px;
+    font-size: 14px;
+    box-shadow: -1px -8px 5px -7px rgb(110, 72, 33);
+}
+
+footer a {
+    color: rgba(245, 245, 220, 0.685);
+}
+
+footer b, .design {
+    font-size: 12px;
+    color: rgba(250, 243, 233, 0.24);
+    margin: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    z-index: 5000;
+    border-radius: 50px;
+    left: 5px;
+    top: 11vh;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1300px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+}
